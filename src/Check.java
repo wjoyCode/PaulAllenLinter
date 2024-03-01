@@ -1,5 +1,5 @@
-import java.util.Optional;
+import java.util.*;
 
 public interface Check {
-    public Optional<Error> lint(Lintee lintee);
+    public List<Error> lint(Lintee lintee);
 }
