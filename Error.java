@@ -1,7 +1,7 @@
 /**
  * This class creates an Error object for a line of code.
- * @author Hannah and Wyatt
- * @date 2/29/2024
+ * @author Hannah Bolton and Wyatt Young
+ * @date 2024/02/29
  * @version 1.0
  */
 public class Error {
@@ -13,8 +13,8 @@ public class Error {
      * Constructs an Error based off of the error code, line number, and a given
      * error message.
      * @param errorCode The code for the specific type of error.
-     * @param lineNum The line number the error appears on.
-     * @param message The error message corresponding with the type of error.
+     * @param lineNum   The line number the error appears on.
+     * @param message   The error message corresponding with the type of error.
      */
     public Error(int errorCode, int lineNum, String message) {
         this.errorCode = errorCode;
