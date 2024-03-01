@@ -25,6 +25,7 @@ public class BreakCheck implements Check {
                     errorList.add(new Error(errorCode, i + 1, errorMessage));
                 }
             }
+            lineScan.close();
         }
         return errorList;
     }

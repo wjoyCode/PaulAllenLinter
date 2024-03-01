@@ -1,6 +1,3 @@
-import java.io.*;
-import java.util.*;
-
 /**
  * This class creates an Error object for a line of code.
  * @author Hannah Bolton and Wyatt Young
