@@ -4,6 +4,9 @@
  * @date 2024/02/29
  * @version 1.0
  */
+import java.io.*;
+import java.util.*;
+
 public class Error {
     private int errorCode;
     private int lineNum;
