@@ -6,6 +6,19 @@ public class LongLineCheck implements Check {
 
     public List<Error> lint(Lintee lintee) {
         Scanner fileScan = lintee.toScanner();
+        List<Error> errorList = new ArrayList<Error>();
+        int lineNum = 1;
 
+        while (fileScan.hasNextLine()) {
+            String line = fileScan.nextLine();
+
+            if (line.length() >= 100) {
+                errorList.add(new Error(errorCode, lineNum, errorMessage));
+            }
+
+            lineNum++;
+        }
+
+        return errorList;
     }
 }
