@@ -15,10 +15,10 @@ public class Main {
         System.out.println("1001: Forbidden Break Statement")
         
         if(console.nextLine().contains("1000")) {
-            checks.add(new LongLineCheck);
+            checks.add(new LongLineCheck());
         }
         if(console.nextLine().contains("1001")) {
-            checks.add(new BreakCheck);
+            checks.add(new BreakCheck());
         }
 
         File file = new File(fileName);
