@@ -13,7 +13,11 @@ public class Lintee {
     }
 
     public List<String> toList() throws FileNotFoundException {
-        new ArrayList<>()
-        return ;
+        List<String> fileList = new ArrayList<>();
+        Scanner fileScan = this.toScanner();
+        while(fileScan.hasNextLine()) {
+            fileList.add(fileScan.nextLine());
+        }
+        return fileList;
     }
 }
