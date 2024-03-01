@@ -1,13 +1,12 @@
-/**
- * This class checks a given Lintee for lines that are too long.
- * @author Hannah Bolton
- * @date 2024/2/29
- * @version 1.0
- */
-
 import java.io.*;
 import java.util.*;
 
+/**
+ * This class checks a given Lintee for lines that are too long.
+ * @author Hannah Bolton
+ * @date 2024/02/29
+ * @version 1.0
+ */
 public class LongLineCheck implements Check {
     private final String errorMessage =
             "Line contains 100 or more characters."; // specific error message

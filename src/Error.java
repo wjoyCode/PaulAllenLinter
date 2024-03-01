@@ -1,13 +1,12 @@
+import java.io.*;
+import java.util.*;
+
 /**
  * This class creates an Error object for a line of code.
  * @author Hannah Bolton and Wyatt Young
  * @date 2024/02/29
  * @version 1.0
  */
-
-import java.io.*;
-import java.util.*;
-
 public class Error {
     private int errorCode; // error code of the error
     private int lineNum; // number of the line the error occurs on
