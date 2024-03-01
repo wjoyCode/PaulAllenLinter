@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class BreakCheck implements Check {
-    private final String errorMessage = "Line contains forbidden break statement";
+    private final String errorMessage = "Line contains forbidden break statement.";
     private final int errorCode = 1001;
 
     public List<Error> lint(Lintee lintee) throws FileNotFoundException {

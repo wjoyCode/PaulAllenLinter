@@ -4,13 +4,14 @@
  * @date 2024/02/29
  * @version 1.0
  */
+
 import java.io.*;
 import java.util.*;
 
 public class Error {
-    private int errorCode;
-    private int lineNum;
-    private String message;
+    private int errorCode; // error code of the error
+    private int lineNum; // number of the line the error occurs on
+    private String message; // message to be displayed with the error
 
     /**
      * Constructs an Error based off of the error code, line number, and a given
