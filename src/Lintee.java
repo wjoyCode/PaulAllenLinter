@@ -8,6 +8,7 @@ import java.util.*;
  * @date 2024/02/29
  * @version 1.0
  */
+
 public class Lintee {
     private File file; // the file that's being linted
 
@@ -31,6 +32,8 @@ public class Lintee {
 
     /**
      * Creates a List of each line of the file.
+     * Replaces multi-line comments with "\0"
+     * Leaves single-line comments
      * @return List<String> The List of Strings each line of the file.
      * @throws FileNotFoundException if the file does not exist.
      */
@@ -38,10 +41,17 @@ public class Lintee {
         List<String> fileList = new ArrayList<>();
         Scanner fileScan = this.toScanner();
 
-        while(fileScan.hasNextLine()) {
-            fileList.add(fileScan.nextLine());
+        while (fileScan.hasNextLine()) {
+            String line = fileScan.nextLine();
+            if (line.contains("/*")) {
+                while(!line.contains("*/")) {
+                    fileList.add("\0");
+                    line = fileScan.nextLine();
+                }
+            } else {
+                fileList.add(line);
+            }
         }
-
         return fileList;
     }
 }
