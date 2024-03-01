@@ -2,9 +2,9 @@ import java.io.*;
 import java.util.*;
 
 public class Linter {
-    private LIntee lintee;
+    private Lintee lintee;
 
-    public Linter(LInetee lintee) {
+    public Linter(Lintee lintee) {
         this.lintee = lintee;
     }
 
