@@ -1,3 +1,10 @@
+/**
+ * This class reinterprets Files as a new data type
+ * that works more efficently with the checks
+ * @author Hannah Bolton and Wyatt Young
+ * @date 2024/02/29
+ * @version 1.0
+ */
 import java.io.*;
 import java.util.*;
 
