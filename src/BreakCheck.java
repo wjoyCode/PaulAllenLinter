@@ -18,10 +18,11 @@ public class BreakCheck implements Check {
         for(int i = 0; i < linteeList.size(); i++) {
             Scanner lineScan = new Scanner(linteeList.get(i));
             while(lineScan.hasNext()) {
-                if(lineScan.next().equals("//")) {
+                String line = lineScan.next();
+                if(line.equals("//")) {
                     break;
                 }
-                if(lineScan.next().equals("break;")) {
+                if(line.equals("break;")) {
                     errorList.add(new Error(errorCode, i + 1, errorMessage));
                 }
             }

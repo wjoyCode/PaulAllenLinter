@@ -9,5 +9,10 @@ public class Debug {
         for (String line : lintee.toList()) {
             System.out.println(line);
         }
+        BreakCheck breakCheck = new BreakCheck();
+        List<Error> testList = breakCheck.lint(lintee);
+        for (Error error : testList) {
+            System.out.println(error.toString());
+        }
     }
 }
