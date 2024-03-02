@@ -20,13 +20,13 @@ public class LongLineCheck implements Check {
      * @throws FileNotFoundException if the file in the Lintee is not found.
      */
     public List<Error> lint(Lintee lintee) throws FileNotFoundException {
-        Scanner fileScan = lintee.toScanner();
+        Scanner linteeScan = lintee.toScanner();
         List<Error> errorList = new ArrayList<>();
         int lineNum = 1;
 
         // checking each line
-        while (fileScan.hasNextLine()) {
-            String line = fileScan.nextLine();
+        while (linteeScan.hasNextLine()) {
+            String line = linteeScan.nextLine();
 
             if (line.length() >= 100) {
                 errorList.add(new Error(errorCode, lineNum, errorMessage));

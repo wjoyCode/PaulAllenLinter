@@ -23,7 +23,7 @@ public class Lintee {
 
     /**
      * Creates a scanner that scans through the file.
-     * @return Scanner Scanner that scans through the file.
+     * @return Scanner that scans through the file.
      * @throws FileNotFoundException if the file does not exist.
      */
     public Scanner toScanner() throws FileNotFoundException {

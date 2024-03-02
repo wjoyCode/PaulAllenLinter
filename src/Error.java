@@ -53,7 +53,7 @@ public class Error {
     public String toString() {
         return "Line: " + this.getLineNum() +
                 " Error Code: " + this.getErrorCode() +
-                "/n" + this.getMessage();
+                " " + this.getMessage();
     }
 
 }
