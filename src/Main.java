@@ -25,7 +25,7 @@ public class Main {
 
     public static File getFile(Scanner console) {
         while(true) {
-            System.out.println("Please type in your file name");
+            System.out.println("Please type in your file path");
             String fileName = console.nextLine();
             File file = new File(fileName);
             if(file.exists()) {
