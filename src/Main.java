@@ -40,14 +40,21 @@ public class Main {
         Set<Check> checks = new HashSet<>();
         System.out.println("Type of error code of the checks you would like to perform: ");
         System.out.println("(Separate by whitespace to avoid errors)");
+        System.out.println("1999: All Single-Line Errors");
         System.out.println("1000: Long Line");
         System.out.println("1001: Forbidden Break Statement");
-        
-        if(console.nextLine().contains("1000")) {
+        String line = console.nextLine();
+
+        if(line.contains("1999")) {
             checks.add(new LongLineCheck());
-        }
-        if(console.nextLine().contains("1001")) {
             checks.add(new BreakCheck());
+        } else {
+            if(line.contains("1000")) {
+                checks.add(new LongLineCheck());
+            }
+            if(line.contains("1001")) {
+                checks.add(new BreakCheck());
+            }
         }
 
         return checks;

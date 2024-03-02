@@ -10,7 +10,7 @@ import java.util.*;
 public class LongLineCheck implements Check {
     private final String errorMessage =
             "Line contains 100 or more characters."; // specific error message
-    private final int errorCode = 1001; // specific error code
+    private final int errorCode = 1000; // specific error code
 
     /**
      * Method that lints a given Lintee for lines that are 100 characters or
