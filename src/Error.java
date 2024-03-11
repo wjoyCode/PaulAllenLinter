@@ -55,5 +55,4 @@ public class Error {
                 " Error Code: " + this.getErrorCode() +
                 " " + this.getMessage();
     }
-
 }
